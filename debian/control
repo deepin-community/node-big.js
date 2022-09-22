@@ -1,0 +1,36 @@
+Source: node-big.js
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Thorsten Alteholz <debian@alteholz.de>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , uglifyjs
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-big.js
+Vcs-Git: https://salsa.debian.org/js-team/node-big.js.git
+Homepage: https://github.com/MikeMcl/big.js
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-big.js
+Architecture: all
+Depends: ${misc:Depends}
+Provides: libjs-big.js
+Suggests: javascript-common
+ , nodejs
+Multi-Arch: foreign
+Description: small, fast, easy-to-use library for arbitrary-precision decimal arithmetic
+ This module is the little sister to bignumber.js:
+   - Faster, smaller and easier-to-use than JavaScript versions
+     of Java's BigDecimal
+   - Only 2.7 KB minified and gzipped
+   - Simple API
+   - Replicates the toExponential, toFixed and toPrecision methods
+     of JavaScript's Number type
+   - Includes a sqrt method
+   - Stores values in an accessible decimal floating point format
+   - No dependencies
+   - Comprehensive documentation and test set
+ .
+ Node.js is an event-based server-side JavaScript engine.

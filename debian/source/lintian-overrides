@@ -1,0 +1,6 @@
+# False positive
+very-long-line-length-in-source-file test/methods/sqrt.js line length is*
+# Uninstalled files
+source-is-missing docs/* *
+source-contains-prebuilt-javascript-object docs/* *
+very-long-line-length-in-source-file docs/* *
